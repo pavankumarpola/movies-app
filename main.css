@@ -1,0 +1,172 @@
+/* navbar css */
+
+.nav-item{
+    padding: 20px 7px;
+    font-size: large;
+    font-weight: 900;
+  }
+  .nav-item:hover{
+    font-size: x-large;
+    text-decoration: none;
+  }
+
+  
+  @keyframes pavan {
+    0% { transform: translateY(0); }
+    50% { transform: translateX(-15px); }
+    100% { transform: translateY(0); }
+  }
+  .nav-item:hover{
+    animation: pavan 0.5s ease-in-out infinite;
+    font-size: x-large;
+  }
+  #navbarSupportedContent:hover{
+    color: black;
+  }
+  
+
+  #button{
+   margin-right: 25px;
+  }
+  .button{
+    font-size: 15px;
+    font-weight: 900;
+    color: blue;
+    background-color: white;
+    letter-spacing: 5px;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    outline: 2px solid #05343c;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  .button:hover{
+    color: white;
+    transform: scale(1.1);
+    outline: 2px solid rgb(10, 41, 74);
+    box-shadow: 4px 5px 17px -4px black ;
+  }
+  .button::before{
+    content: "";
+    background-color: blue;
+    outline:  2px solid blue;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    height: 100%;
+    width: 0;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: all 1s;
+  }
+  .button:hover::before{
+    width: 250%;
+  }
+  /* banner css */
+  .search{
+    display: inline-flex;
+    align-items: center;
+    background-image: #c22957;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    border: 4px solid pink;
+    margin-left: 20%;
+    margin-top: 180px;
+    
+  }
+  .search :is(input,button){
+    background: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
+   
+  }
+  .searchinput{
+    width: 0;
+    transition: width 0.5s;
+
+  }
+  .searchbutton{
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: color 0.25s;
+  }
+  .searchbutton:hover{
+    color: palevioletred;
+  
+  }
+  .search:focus-within input{
+    width: 350px;
+
+  }
+  ::placeholder{
+    font: inherit;
+    color: #fff;
+  }
+  .banner{
+    background-image: url(https://repository-images.githubusercontent.com/299409710/b42f7780-0fe1-11eb-8460-e459acd20fb4);
+    height: 500px;
+    background-size: cover;
+  }
+  .h1,h4,h5{
+    color: aliceblue;
+    
+  }
+  .all{
+  position: relative;
+    padding-left: 240px;
+    top: 160px;
+  }
+/* movie cards */
+.content {
+  transition: all 0.3s ease-in-out;
+}
+
+.content:hover {
+cursor: pointer;
+  transform: scale(1.05);
+}
+/* .content::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(360deg,blue,red);
+  height: 100%;
+  animation: animate 4s linear infinite;
+  transition: all 0.3s linear;
+}
+.content::after{
+  content: "";
+  position: absolute;
+  background-color: aliceblue;
+  inset: 5px;
+  border-radius: 15px;
+}
+@keyframes animate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.content{
+  width: 20rem;
+  height: 650px;
+  position: relative;
+  display: flex;
+  background: #07182e;
+cursor: pointer;
+border-radius: 20px;
+overflow: hidden;
+
+}*/
+
+
+ 
